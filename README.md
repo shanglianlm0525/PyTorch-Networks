@@ -22,18 +22,13 @@ Pytorch implementation of cnn network
 **Lightweight network**
 
 - **MobileNets:**
-
 - **MobileNetV2：**
-
 - **MobileNetV3：**
-
 - **ShuffleNet：**
-
 - **ShuffleNet V2:**
-
 - **SqueezeNet**
-
 - **Xception**
+- **MixNet**
 
 
 
