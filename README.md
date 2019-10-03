@@ -62,7 +62,13 @@ Pytorch implementation of cnn network
 
 - **FisheyeMODNet:**
 
+  
 
+**Instance Segmentation** 
+
+- **PolarMask** 
+
+  
 
 **FaceDetectorAndRecognition**
 
