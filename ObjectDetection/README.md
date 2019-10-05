@@ -63,6 +63,16 @@ https://liumin.blog.csdn.net/article/details/100864158
 
 
 
+**RetinaNet:**
+
+https://liumin.blog.csdn.net/article/details/102135318
+
+https://arxiv.org/pdf/1708.02002.pdf
+
+https://liumin.blog.csdn.net/article/details/102135318
+
+
+
 **Objects as Points:**
 
 Objects as Points,2019

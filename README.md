@@ -35,23 +35,15 @@ Pytorch implementation of cnn network
 **ObjectDetection-network**
 
 - **SSD:**
-
 - **YOLO:**
-
 - **YOLOv2:**
-
 - **YOLOv3:**
-
 - **FCOS:**
-
 - **FPN:**
-
+- **RetinaNet**
 - **Objects as Points:**
-
 - **FSAF:**
-
 - **CenterNet**
-
 - **FoveaBox**
 
 
