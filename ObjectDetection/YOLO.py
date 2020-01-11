@@ -1,6 +1,5 @@
 import torch
 import torch.nn as nn
-import torchvision
 
 def Conv1x1BNReLU(in_channels,out_channels):
     return nn.Sequential(

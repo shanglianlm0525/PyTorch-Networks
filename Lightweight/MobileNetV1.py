@@ -4,7 +4,7 @@ import torchvision
 
 def BottleneckV1(in_channels, out_channels, stride):
   return  nn.Sequential(
-        nn.Conv2d(in_channels=in_channels,out_channels=in_channels,kernel_size=3,stride=stride,padding=1),
+        nn.Conv2d(in_channels=in_channels,out_channels=in_channels,kernel_size=3,stride=stride,padding=1,groups=in_channels),
         nn.BatchNorm2d(in_channels),
         nn.ReLU6(inplace=True),
         nn.Conv2d(in_channels=in_channels, out_channels=out_channels, kernel_size=1, stride=1),
@@ -40,7 +40,7 @@ class MobileNetV1(nn.Module):
 
         self.avg_pool = nn.AvgPool2d(kernel_size=7,stride=1)
         self.linear = nn.Linear(in_features=1024,out_features=num_classes)
-        self.bn = nn.BatchNorm2d(num_classes)
+        self.dropout = nn.Dropout(p=0.2)
         self.softmax = nn.Softmax(dim=1)
 
         self.init_params()
@@ -59,6 +59,7 @@ class MobileNetV1(nn.Module):
         x = self.bottleneck(x)
         x = self.avg_pool(x)
         x = x.view(x.size(0),-1)
+        x = self.dropout(x)
         x = self.linear(x)
         out = self.softmax(x)
         return out
