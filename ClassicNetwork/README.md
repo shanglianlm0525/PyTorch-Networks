@@ -37,3 +37,14 @@ Classical network implemented by pytorch
 
 - Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning , Christian Szegedy ,2016
 
+
+
+**DenseNet:**
+
+Densely Connected Convolutional Networks, 2017
+
+
+
+**ResNeXt:**
+
+Aggregated Residual Transformations for Deep Neural Networks,2017
