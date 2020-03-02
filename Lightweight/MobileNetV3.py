@@ -12,7 +12,7 @@ class HardSwish(nn.Module):
 
 def ConvBNActivation(in_channels,out_channels,kernel_size,stride,activate):
     return nn.Sequential(
-            nn.Conv2d(in_channels=in_channels, out_channels=out_channels, kernel_size=kernel_size, stride=stride, padding=(kernel_size-1)//2),
+            nn.Conv2d(in_channels=in_channels, out_channels=out_channels, kernel_size=kernel_size, stride=stride, padding=(kernel_size-1)//2, groups=in_channels),
             nn.BatchNorm2d(out_channels),
             nn.ReLU6(inplace=True) if activate == 'relu' else HardSwish()
         )
