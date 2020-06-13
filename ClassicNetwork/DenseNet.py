@@ -69,8 +69,6 @@ class DenseNet(nn.Module):
         drop_rate = 0
         self.conv1 = Conv1(in_planes=3, places=init_channels)
 
-        blocks*4
-
         num_features = init_channels
         self.layer1 = DenseBlock(num_layers=blocks[0], inplances=num_features, growth_rate=growth_rate, bn_size=bn_size, drop_rate=drop_rate)
         num_features = num_features + blocks[0] * growth_rate

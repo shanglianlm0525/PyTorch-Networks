@@ -21,13 +21,13 @@ class VGGNet(nn.Module):
 
         self.classifier = nn.Sequential(
             nn.Linear(in_features=512*7*7,out_features=4096),
-            nn.ReLU6(inplace=True),
             nn.Dropout(p=0.2),
             nn.Linear(in_features=4096, out_features=4096),
-            nn.ReLU6(inplace=True),
             nn.Dropout(p=0.2),
             nn.Linear(in_features=4096, out_features=num_classes)
         )
+
+        self._init_params()
 
     def _make_layers(self, in_channels, out_channels, block_num):
         layers = []
@@ -36,6 +36,14 @@ class VGGNet(nn.Module):
             layers.append(Conv3x3BNReLU(out_channels,out_channels))
         layers.append(nn.MaxPool2d(kernel_size=2,stride=2, ceil_mode=False))
         return nn.Sequential(*layers)
+
+    def _init_params(self):
+        for m in self.modules():
+            if isinstance(m, nn.Conv2d):
+                nn.init.kaiming_normal_(m.weight, mode='fan_out', nonlinearity='relu')
+            elif isinstance(m, nn.BatchNorm2d):
+                nn.init.constant_(m.weight, 1)
+                nn.init.constant_(m.bias, 0)
 
     def forward(self, x):
         x = self.stage1(x)
