@@ -29,6 +29,7 @@ Pytorch implementation of cnn network
 - **SqueezeNet**
 - **Xception**
 - **MixNet**
+- **GhostNet**
 
 
 
@@ -50,7 +51,13 @@ Pytorch implementation of cnn network
 
 **Semantic Segmentation**
 
-- **FCN:**
+- **FCN**
+
+- **Fast-SCNN**
+
+- **LEDNet:**
+
+- **LRNNet**
 
 - **FisheyeMODNet:**
 
@@ -65,11 +72,13 @@ Pytorch implementation of cnn network
 **FaceDetectorAndRecognition**
 
 - **FaceBoxes**
-
 - **LFFD**
+- **VarGFaceNet**
 
 
 
 **HumanPoseEstimation**
 
 - **Stacked Hourglass Networks**
+- **Simple Baselines**
+- **LPN**
