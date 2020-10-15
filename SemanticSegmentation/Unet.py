@@ -2,7 +2,7 @@
 # -- coding: utf-8 --
 # @Time : 2020/7/8 13:51
 # @Author : liumin
-# @File : Unet.py
+# @File : unet.py
 
 import torch
 import torch.nn as nn
