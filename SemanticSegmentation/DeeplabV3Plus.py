@@ -2,7 +2,7 @@
 # -- coding: utf-8 --
 # @Time : 2020/9/25 12:50
 # @Author : liumin
-# @File : DeeplabV3Plus.py
+# @File : deeplabv3_plus.py
 
 import torch
 import torch.nn as nn
