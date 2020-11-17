@@ -13,10 +13,7 @@ def ConvBNReLUFactorization(in_channels,out_channels,kernel_sizes,paddings):
     return nn.Sequential(
         nn.Conv2d(in_channels=in_channels, out_channels=out_channels, kernel_size=kernel_sizes, stride=1,padding=paddings),
         nn.BatchNorm2d(out_channels),
-        nn.ReLU6(inplace=True),
-        nn.Conv2d(in_channels=out_channels, out_channels=out_channels, kernel_size=kernel_sizes, stride=1, padding=paddings),
-        nn.BatchNorm2d(out_channels),
-        nn.ReLU6(inplace=True),
+        nn.ReLU6(inplace=True)
     )
 
 class InceptionV3ModuleA(nn.Module):
@@ -63,10 +60,10 @@ class InceptionV3ModuleB(nn.Module):
 
         self.branch3 = nn.Sequential(
             ConvBNReLU(in_channels=in_channels,out_channels=out_channels3reduce,kernel_size=1),
-            ConvBNReLUFactorization(in_channels=out_channels3reduce, out_channels=out_channels3reduce,kernel_sizes=[7, 1], paddings=[3, 0]),
             ConvBNReLUFactorization(in_channels=out_channels3reduce, out_channels=out_channels3reduce,kernel_sizes=[1, 7], paddings=[0, 3]),
             ConvBNReLUFactorization(in_channels=out_channels3reduce, out_channels=out_channels3reduce,kernel_sizes=[7, 1], paddings=[3, 0]),
-            ConvBNReLUFactorization(in_channels=out_channels3reduce, out_channels=out_channels3,kernel_sizes=[1, 7], paddings=[0, 3]),
+            ConvBNReLUFactorization(in_channels=out_channels3reduce, out_channels=out_channels3reduce,kernel_sizes=[1, 7], paddings=[0, 3]),
+            ConvBNReLUFactorization(in_channels=out_channels3reduce, out_channels=out_channels3,kernel_sizes=[7, 1], paddings=[3, 0]),
         )
 
         self.branch4 = nn.Sequential(
