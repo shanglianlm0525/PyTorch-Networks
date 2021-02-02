@@ -22,7 +22,7 @@ backports.weakref==1.0.post1
 beautifulsoup4==4.9.1
 bitarray @ file:///tmp/build/80754af9/bitarray_1594753876414/work
 bkcharts==0.2
-bleach==3.1.5
+bleach==3.3.0
 bokeh @ file:///tmp/build/80754af9/bokeh_1593187602660/work
 boto==2.49.0
 Bottleneck==1.3.2
