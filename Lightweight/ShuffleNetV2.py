@@ -101,9 +101,9 @@ class ShuffleNetV2(nn.Module):
         self.stage3 = self._make_layer(planes[0], planes[1], layers[1], False)
         self.stage4 = self._make_layer(planes[1], planes[2], layers[2], False)
 
-        self.global_pool = nn.AvgPool2d(kernel_size=7, stride=1)
+        self.global_pool = nn.AdaptiveAvgPool2d(1)
         self.dropout = nn.Dropout(p=0.2)
-        self.linear = nn.Linear(in_features=planes[2] * 7 * 7, out_features=num_classes)
+        self.linear = nn.Linear(in_features=planes[2], out_features=num_classes)
 
         self.init_params()
 
@@ -128,7 +128,7 @@ class ShuffleNetV2(nn.Module):
         x = self.stage2(x)
         x = self.stage3(x)
         x = self.stage4(x)
-#
+        x = self.global_pool(x)
         x = x.view(x.size(0), -1)
         x = self.dropout(x)
         out = self.linear(x)
@@ -159,7 +159,7 @@ def shufflenet_v2_x0_5(**kwargs):
     return model
 
 if __name__ == '__main__':
-    model = shufflenet_v2_x1_0()
+    model = shufflenet_v2_x2_0()
     print(model)
 
     input = torch.randn(1, 3, 224, 224)
