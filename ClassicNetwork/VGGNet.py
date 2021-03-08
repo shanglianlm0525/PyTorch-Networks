@@ -9,9 +9,9 @@ def Conv3x3BNReLU(in_channels,out_channels):
         nn.ReLU6(inplace=True)
     )
 
-class VGGNet(nn.Module):
+class VGG(nn.Module):
     def __init__(self, block_nums,num_classes=1000):
-        super(VGGNet, self).__init__()
+        super(VGG, self).__init__()
 
         self.stage1 = self._make_layers(in_channels=3, out_channels=64, block_num=block_nums[0])
         self.stage2 = self._make_layers(in_channels=64, out_channels=128, block_num=block_nums[1])
@@ -57,17 +57,18 @@ class VGGNet(nn.Module):
 
 def VGG16():
     block_nums = [2, 2, 3, 3, 3]
-    model = VGGNet(block_nums)
+    model = VGG(block_nums)
     return model
 
 def VGG19():
     block_nums = [2, 2, 4, 4, 4]
-    model = VGGNet(block_nums)
+    model = VGG(block_nums)
     return model
 
 if __name__ == '__main__':
     model = VGG16()
     print(model)
+    torchvision.models.vgg16_bn()
 
     input = torch.randn(1,3,224,224)
     out = model(input)
