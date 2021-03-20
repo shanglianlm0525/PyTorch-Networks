@@ -91,7 +91,7 @@ itsdangerous==1.1.0
 jdcal==1.4.1
 jedi @ file:///tmp/build/80754af9/jedi_1592841866100/work
 jeepney==0.4.3
-Jinja2==2.11.2
+Jinja2==2.11.3
 joblib @ file:///tmp/build/80754af9/joblib_1594236160679/work
 json5==0.9.5
 jsonschema==3.2.0
