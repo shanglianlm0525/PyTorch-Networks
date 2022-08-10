@@ -124,7 +124,7 @@ mpmath==1.1.0
 msgpack==1.0.0
 multipledispatch==0.6.0
 navigator-updater==0.2.1
-nbconvert==5.6.1
+nbconvert==6.3.0
 nbformat==5.0.7
 networkx @ file:///tmp/build/80754af9/networkx_1594377231366/work
 nltk @ file:///tmp/build/80754af9/nltk_1592496090529/work
