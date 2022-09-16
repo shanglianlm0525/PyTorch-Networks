@@ -109,7 +109,7 @@ libarchive-c==2.9
 llvmlite==0.33.0+1.g022ab0f
 locket==0.2.0
 lxml @ file:///tmp/build/80754af9/lxml_1594826779415/work
-Mako==1.1.3
+Mako==1.2.2
 Markdown==3.2.2
 MarkupSafe==1.1.1
 matplotlib @ file:///tmp/build/80754af9/matplotlib-base_1592846008246/work
