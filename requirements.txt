@@ -41,7 +41,7 @@ conda-package-handling==1.7.0
 conda-verify==3.4.2
 configparser==5.0.1
 contextlib2==0.6.0.post1
-cryptography==2.9.2
+cryptography==39.0.1
 cupy==7.8.0.post1
 cupy-cuda102==7.8.0
 cycler==0.10.0
