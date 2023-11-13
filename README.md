@@ -83,3 +83,11 @@ Pytorch implementation of cnn network
 - **Stacked Hourglass Networks**
 - **Simple Baselines**
 - **LPN**
+
+
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=shanglianlm0525/PyTorch-Networks&type=Date)](https://star-history.com/#shanglianlm0525/PyTorch-Networks&Date)
+
+
