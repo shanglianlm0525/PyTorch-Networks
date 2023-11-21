@@ -13,7 +13,7 @@ astropy==4.0.1.post1
 atomicwrites==1.4.0
 attrs==19.3.0
 autopep8 @ file:///tmp/build/80754af9/autopep8_1592412889138/work
-Babel==2.8.0
+Babel==2.9.1
 backcall==0.2.0
 backports.functools-lru-cache==1.6.1
 backports.shutil-get-terminal-size==1.0.0
