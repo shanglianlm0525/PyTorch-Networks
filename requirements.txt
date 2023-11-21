@@ -258,7 +258,7 @@ wandb==0.10.10
 watchdog @ file:///tmp/build/80754af9/watchdog_1593447344699/work
 wcwidth @ file:///tmp/build/80754af9/wcwidth_1593447189090/work
 webencodings==0.5.1
-Werkzeug==1.0.1
+Werkzeug==2.2.3
 widgetsnbextension==3.5.1
 wrapt==1.11.2
 wurlitzer @ file:///tmp/build/80754af9/wurlitzer_1594753850195/work
