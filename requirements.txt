@@ -136,7 +136,7 @@ numpy==1.18.5
 numpydoc @ file:///tmp/build/80754af9/numpydoc_1594166760263/work
 oauthlib==3.1.0
 olefile==0.46
-onnx==1.7.0
+onnx==1.13.0
 opencv-python==4.4.0.42
 openpyxl @ file:///tmp/build/80754af9/openpyxl_1594167385094/work
 packaging==20.4
