@@ -189,7 +189,7 @@ pytorch-lightning==0.9.0
 pytz==2020.1
 PyWavelets==1.1.1
 pyxdg==0.26
-PyYAML==5.3.1
+PyYAML==5.4
 pyzmq==19.0.1
 QDarkStyle==2.8.1
 QtAwesome==0.7.2
