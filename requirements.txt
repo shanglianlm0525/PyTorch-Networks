@@ -158,7 +158,7 @@ ply==3.11
 prometheus-client==0.8.0
 promise==2.3
 prompt-toolkit==3.0.5
-protobuf==3.13.0
+protobuf==3.18.3
 psutil==5.7.0
 ptyprocess==0.6.0
 py @ file:///tmp/build/80754af9/py_1593446248552/work
