@@ -172,7 +172,7 @@ pycuda==2019.1.2
 pycurl==7.43.0.5
 pydocstyle @ file:///tmp/build/80754af9/pydocstyle_1592848020240/work
 pyflakes==2.2.0
-Pygments==2.6.1
+Pygments==2.7.4
 pylint @ file:///tmp/build/80754af9/pylint_1592496053748/work
 pyodbc===4.0.0-unsupported
 pyOpenSSL @ file:///tmp/build/80754af9/pyopenssl_1594392929924/work
